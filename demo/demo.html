@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Demo</title>
+    <script type="text/javascript" src="./jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="./raphael-min.js"></script>
+    <script type="text/javascript" src="../tip.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var paper = Raphael(10, 50, 200, 1000);
+      Tip.drawTip(paper, 0, 0, 100, 50, 10, 10, 'top', 5, 'here it is', null, null);
+      Tip.drawTip(paper, 0, 100, 100, 50, 10, 10, 'bottom', 5, 'here it is', {
+        fill: '#fcb454'
+      }, null);
+      Tip.drawTip(paper, 0, 200, 100, 50, 10, 10, 'left', 5, 'here it is', {
+        fill: '#fcb454'
+      }, {
+        fill: "#000"
+      });
+      Tip.drawTip(paper, 0, 300, 100, 50, 10, 10, 'right', 5, 'here it is', null, null);
+    </script>
+  </body>
+</html>

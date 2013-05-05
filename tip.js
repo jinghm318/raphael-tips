@@ -1,6 +1,6 @@
 /**/
 var Tip = {
-    drawTip : function(rph, x, y, w, h, tW, tH, tSide, r, str, tipAttr, textAttr){
+  drawTip : function(rph, x, y, w, h, tW, tH, tSide, r, str, tipAttr, textAttr){
     var tip = rph.set();
     var _ = this;
     var defaultTipAttr = {
@@ -15,6 +15,7 @@ var Tip = {
     };
     if(tipAttr){
       defaultTipAttr = $.extend(defaultTipAttr, tipAttr);
+      console.log(defaultTipAttr);
     }
     if(textAttr){
       defaultTextAttr = $.extend(defaultTextAttr, textAttr);
